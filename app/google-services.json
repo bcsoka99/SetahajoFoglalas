@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "510340763233",
+    "project_id": "sethajofoglalas",
+    "storage_bucket": "sethajofoglalas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510340763233:android:8585cea4576f8e50bc2420",
+        "android_client_info": {
+          "package_name": "com.example.setahajofoglalas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510340763233-48im1mnl48f2rdcmrkprcetgjmholnvg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.setahajofoglalas",
+            "certificate_hash": "a15d9f5fdbf677ef159561567e33331b7d1ea176"
+          }
+        },
+        {
+          "client_id": "510340763233-bven60k54iuhnc8c7hc6sokmhlmnvfdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaeDbYMcGhuju1S8JMu6ORkjjnphpzyvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510340763233-bven60k54iuhnc8c7hc6sokmhlmnvfdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
