@@ -12,21 +12,29 @@ public class Reservation {
     @NonNull
     private Integer id;
     @NonNull
-    private Date date;
+    private String date;
     @NonNull
     private String startingHour;
 
-    public Reservation(@NonNull Date date, @NonNull String startingHour) {
+    public Reservation(@NonNull String date, @NonNull String startingHour) {
         this.date = date;
         this.startingHour = startingHour;
     }
 
-    public Date getDate() {
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDate() {
         return date;
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.date = date.toString();
     }
 
     public String getStartingHour() {

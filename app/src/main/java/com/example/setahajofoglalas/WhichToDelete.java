@@ -11,17 +11,19 @@ import android.widget.Spinner;
 
 import com.example.setahajofoglalas.databaseclasses.Reservation;
 import com.example.setahajofoglalas.databaseclasses.ReservationDao;
+import com.example.setahajofoglalas.databaseclasses.ReservationRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class WhichToDelete extends AppCompatActivity {
     Spinner spinner;
-    ReservationDao dao;
+    ReservationRepository dao;
     Button deleteButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        dao = new ReservationRepository(getApplication());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_which_to_delete);
         spinner = findViewById(R.id.spinner2);

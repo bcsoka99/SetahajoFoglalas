@@ -10,13 +10,14 @@ import android.widget.RadioGroup;
 
 import com.example.setahajofoglalas.databaseclasses.Reservation;
 import com.example.setahajofoglalas.databaseclasses.ReservationDao;
+import com.example.setahajofoglalas.databaseclasses.ReservationRepository;
 
 import java.util.Date;
 
 public class CruisesAtDate extends AppCompatActivity {
     Long millisecs;
     RadioGroup radio;
-    ReservationDao dao;
+    ReservationRepository dao;
     Button select;
     Button back;
 
@@ -31,10 +32,11 @@ public class CruisesAtDate extends AppCompatActivity {
         back = findViewById(R.id.button2);
         select.setOnClickListener(event -> reserve());
         back.setOnClickListener(event -> redirectToDate());
+        dao = new ReservationRepository(getApplication());
     }
 
     private void reserve(){
-        Date datum = new Date(millisecs);
+        String datum = new Date(millisecs).toString();
         int radioId = radio.getCheckedRadioButtonId();
         RadioButton rb = findViewById(radioId);
         String time = rb.getText().toString();

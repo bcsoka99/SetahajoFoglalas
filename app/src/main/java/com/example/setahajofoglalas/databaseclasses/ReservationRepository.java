@@ -9,7 +9,7 @@ import java.util.List;
 public class ReservationRepository {
     private ReservationDao dao;
 
-    ReservationRepository(Application application){
+    public ReservationRepository(Application application){
         ReservationRoomDatabase db = ReservationRoomDatabase.getInstance(application);
         dao = db.reservationDao();
     }

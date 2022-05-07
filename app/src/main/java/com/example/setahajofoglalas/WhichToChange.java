@@ -10,14 +10,16 @@ import android.widget.Spinner;
 
 import com.example.setahajofoglalas.databaseclasses.Reservation;
 import com.example.setahajofoglalas.databaseclasses.ReservationDao;
+import com.example.setahajofoglalas.databaseclasses.ReservationRepository;
 
 public class WhichToChange extends AppCompatActivity {
     Spinner spinner;
-    ReservationDao dao;
+    ReservationRepository dao;
     Button changeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        dao = new ReservationRepository(getApplication());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_which_to_change);
         spinner = findViewById(R.id.spinner);

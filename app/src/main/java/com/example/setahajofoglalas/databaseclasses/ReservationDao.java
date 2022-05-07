@@ -23,4 +23,6 @@ public interface ReservationDao {
     @Query("SELECT * from reservation where id = :id ")
     Reservation findOne(Integer id);
 
+    @Query("DELETE FROM reservation")
+    void deleteAll();
 }
